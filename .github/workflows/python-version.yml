@@ -1,0 +1,15 @@
+##  Named of the workflow.
+name: Pytest
+
+## Set the trigger policy.
+## In this case, the workflow is execute on a `push` event,
+## or when a new commit is pushed to the repository
+on: [push]
+
+## List the steps to be executed by the workflow
+jobs:
+  build:
+    ## Configure the operating system the workflow should run on.
+    ## In this case, the job on Ubuntu. Additionally, set a the job
+    ## to execute on different Python versions 
+    runs-on: ubuntu-latest
